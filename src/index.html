@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,12 +11,134 @@
     />
     <title>Title</title>
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <!-- Верхня частина для мобільної версії (burger + logo + image) -->
+          <div class="header__top">
+            <div class="header__top-content">
+              <div class="header__top-burger">
+                <a href="#"></a>
+              </div>
+              <div class="header__top-logo">
+                <a href="#"></a>
+              </div>
+            </div>
+
+            <img
+              src="./images/main-image.png"
+              alt="Museum image"
+              class="header__top-image"
+            />
+          </div>
+
+          <!-- Нижня частина для мобільної версії (title + button) -->
+          <div class="header__bottom">
+            <h1 class="header__bottom-title">Художній музей</h1>
+            <button class="button header__bottom-button">
+              Квитки
+              <span class="button__img">
+                <img
+                  src="./images/icons/button-right-arrow.png"
+                  alt="right arrow"
+                />
+              </span>
+            </button>
+          </div>
+
+          <!-- Ліва сторона для desktop/tablet (burger + title + button) -->
+          <div class="header__left-side">
+            <div class="header__left-side-burger">
+              <a href="#"></a>
+            </div>
+            <h1 class="header__left-side-title">Художній музей</h1>
+            <button class="button header__left-side-button">
+              Квитки
+              <span class="button__img">
+                <img
+                  src="../src/images/icons/button-right-arrow.png"
+                  alt="right arrow"
+                />
+              </span>
+            </button>
+
+            <div class="header__left-side-events">
+              <div class="header__left-side-events-divider"></div>
+              <span class="header__left-side-events-title">Події</span>
+            </div>
+          </div>
+
+          <!-- Права сторона для desktop/tablet (logo + image) -->
+          <div class="header__right-side">
+            <div class="header__right-side-logo">
+              <a
+                href="#"
+                class="header__right-side-logo-image"
+              ></a>
+            </div>
+            <img
+              src="../src/images/main-image.png"
+              alt="Museum image"
+              class="header__right-side-image"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside>
+      <!--    <nav>-->
+      <!--      <ul>-->
+      <!--        <li>-->
+      <!--          <a href="#">-->
+      <!--            Галерея-->
+      <!--          </a>-->
+      <!--        </li>-->
+      <!--        <li>-->
+      <!--          <a href="#">-->
+      <!--            Про нас-->
+      <!--          </a>-->
+      <!--        </li>-->
+      <!--        <li>-->
+      <!--          <a href="#">-->
+      <!--            Виставки та події-->
+      <!--          </a>-->
+      <!--        </li>-->
+      <!--        <li>-->
+      <!--          <a href="#">-->
+      <!--            Контакти-->
+      <!--          </a>-->
+      <!--        </li>-->
+      <!--      </ul>-->
+      <!--    </nav>-->
+    </aside>
+
+    <main></main>
+    <footer></footer>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
