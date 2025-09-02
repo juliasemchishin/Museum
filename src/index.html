@@ -9,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>NAMU</title>
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -41,7 +41,10 @@
           <div class="header__top">
             <div class="header__top-content">
               <div class="header__top-burger">
-                <a href="#"></a>
+                <a
+                  href="#menu"
+                  class="icon"
+                ></a>
               </div>
               <div class="header__top-logo">
                 <a href="#"></a>
@@ -72,7 +75,10 @@
           <!-- Ліва сторона для desktop/tablet (burger + title + button) -->
           <div class="header__left-side">
             <div class="header__left-side-burger">
-              <a href="#"></a>
+              <a
+                href="#menu"
+                class="icon"
+              ></a>
             </div>
             <h1 class="header__left-side-title">Художній музей</h1>
             <button class="button header__left-side-button">
@@ -109,31 +115,100 @@
       </div>
     </header>
 
-    <aside>
-      <!--    <nav>-->
-      <!--      <ul>-->
-      <!--        <li>-->
-      <!--          <a href="#">-->
-      <!--            Галерея-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li>-->
-      <!--          <a href="#">-->
-      <!--            Про нас-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li>-->
-      <!--          <a href="#">-->
-      <!--            Виставки та події-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li>-->
-      <!--          <a href="#">-->
-      <!--            Контакти-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--      </ul>-->
-      <!--    </nav>-->
+    <aside
+      class="aside menu"
+      id="menu"
+    >
+      <div class="container">
+        <div class="aside__content">
+          <div class="aside__content-left">
+            <div class="aside__menu">
+              <div class="aside__close-icon">
+                <a
+                  href="#"
+                  class="aside__close-icon-link"
+                ></a>
+              </div>
+
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a
+                      href="#"
+                      class="nav__link"
+                    >
+                      Галерея
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      href="#"
+                      class="nav__link"
+                    >
+                      Виставки та
+                      <br />
+                      події
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a
+                      href="#"
+                      class="nav__link"
+                    >
+                      Про нас
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      href="#"
+                      class="nav__link"
+                    >
+                      Контакти
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="divider"></div>
+          </div>
+
+          <div class="aside__content-right">
+            <div class="aside__schedule">
+              <div class="aside__schedule-times">
+                <div>Графік роботи</div>
+                <div>
+                  <span class="bold-text">12:00 — 20:00</span>
+                  середа
+                  <br />
+                  <span class="bold-text">12:00 — 20:00</span>
+                  четвер
+                  <br />
+                  <span class="bold-text">12:00 — 20:00</span>
+                  п’ятниця
+                  <br />
+                  <span class="bold-text">11:00 — 19:00</span>
+                  субота
+                  <br />
+                  <span class="bold-text">11:00 — 19:00</span>
+                  неділя
+                </div>
+              </div>
+
+              <div class="aside__schedule-times-closed">
+                <span class="bold-text">Вихідні:</span>
+                понеділок, вівторок
+                <br />
+                Каса припиняє роботу за 1 годину до закриття музею
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--        <div class="horizontal-divider"></div>-->
+      </div>
     </aside>
 
     <main></main>
