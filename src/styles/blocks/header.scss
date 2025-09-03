@@ -8,7 +8,7 @@
     column-gap: 20px;
 
     @include on-tablet {
-      height: 100vh;
+      // height: 100vh;
 
       --columns: 6;
 
@@ -16,6 +16,8 @@
     }
 
     @include on-desktop {
+      height: 100vh;
+
       --columns: 12;
     }
   }

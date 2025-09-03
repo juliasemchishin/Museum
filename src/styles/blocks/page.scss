@@ -5,6 +5,8 @@
   scroll-behavior: smooth;
 
   &__body {
+    box-sizing: border-box;
+
     min-width: 320px;
     margin: 0;
   }

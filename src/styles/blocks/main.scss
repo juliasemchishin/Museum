@@ -1,0 +1,12 @@
+.main {
+  padding-block: 70px;
+  width: 100%;
+
+  @include on-tablet {
+    padding-block: 88px;
+  }
+
+  @include on-desktop {
+    padding-block: 200px;
+  }
+}
