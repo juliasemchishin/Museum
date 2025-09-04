@@ -8,4 +8,21 @@
   @include on-tablet {
     display: none;
   }
+
+  &-footer {
+    background-color: #1a5a4c80;
+
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+
+    @include on-tablet {
+      display: grid;
+      grid-column: 2 / -2;
+      margin-bottom: 64px;
+    }
+
+    @include on-desktop {
+      display: none;
+    }
+  }
 }

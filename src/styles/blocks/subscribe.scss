@@ -14,12 +14,14 @@
   transform: translateX(-20px);
 
   @include on-tablet {
-    width: calc(100% + 110px);
-    transform: translateX(-55px);
+    width: calc(100% + 78px);
+    transform: translateX(-39px);
     padding: 82px 0;
   }
 
   @include on-desktop {
+    width: calc(100% + 110px);
+    transform: translateX(-55px);
     padding: 163px 0;
   }
 

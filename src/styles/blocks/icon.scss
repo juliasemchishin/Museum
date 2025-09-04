@@ -6,4 +6,13 @@
 
   background-position: center;
   background-size: cover;
+  cursor: pointer;
+
+  &-facebook {
+    background-image: url('../images/icons/facebook.png');
+  }
+
+  &-instagram {
+    background-image: url('../images/icons/instagram.png');
+  }
 }
