@@ -128,6 +128,11 @@
       justify-content: center;
       background-color: #f14a27;
       cursor: pointer;
+      border: none;
+
+      &:hover {
+        background-color: #e54725;
+      }
 
       @include on-tablet {
         min-width: 70px;

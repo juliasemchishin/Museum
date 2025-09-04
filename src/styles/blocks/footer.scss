@@ -39,6 +39,10 @@
     @include on-desktop {
       grid-column: span 1;
     }
+
+    &-logo {
+      @include hover(transform, scale(1.1));
+    }
   }
 
   &__social-media {

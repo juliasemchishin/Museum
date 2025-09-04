@@ -54,6 +54,8 @@
     height: 100%;
     object-fit: cover;
 
+    @include hover(transform, scale(1.02));
+
     &-first {
       @include on-desktop {
         grid-column: 1 / 5;

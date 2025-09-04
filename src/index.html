@@ -31,6 +31,10 @@
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link
+      rel="icon"
+      href="images/new-logo.png"
+    />
   </head>
 
   <body class="page__body">
@@ -61,7 +65,10 @@
           <!-- Нижня частина для мобільної версії (title + button) -->
           <div class="header__bottom">
             <h1 class="header__bottom-title">Художній музей</h1>
-            <button class="button header__bottom-button">
+            <a
+              class="button header__bottom-button"
+              href="#events"
+            >
               Квитки
               <span class="button__img">
                 <img
@@ -69,7 +76,7 @@
                   alt="right arrow"
                 />
               </span>
-            </button>
+            </a>
           </div>
 
           <!-- Ліва сторона для desktop/tablet (burger + title + button) -->
@@ -81,7 +88,10 @@
               ></a>
             </div>
             <h1 class="header__left-side-title">Художній музей</h1>
-            <button class="button header__left-side-button">
+            <a
+              href="#events"
+              class="button header__left-side-button"
+            >
               Квитки
               <span class="button__img">
                 <img
@@ -89,7 +99,7 @@
                   alt="right arrow"
                 />
               </span>
-            </button>
+            </a>
 
             <div class="header__left-side-events">
               <div class="header__left-side-events-divider"></div>
@@ -134,7 +144,7 @@
                 <ul class="nav__list">
                   <li class="nav__item">
                     <a
-                      href="#"
+                      href="#gallery"
                       class="nav__link"
                     >
                       Галерея
@@ -142,7 +152,7 @@
                   </li>
                   <li class="nav__item">
                     <a
-                      href="#"
+                      href="#events"
                       class="nav__link"
                     >
                       Виставки та
@@ -155,7 +165,7 @@
                 <ul class="nav__list">
                   <li class="nav__item">
                     <a
-                      href="#"
+                      href="#subscribe"
                       class="nav__link"
                     >
                       Про нас
@@ -163,7 +173,7 @@
                   </li>
                   <li class="nav__item">
                     <a
-                      href="#"
+                      href="#contacts"
                       class="nav__link"
                     >
                       Контакти
@@ -213,7 +223,10 @@
 
     <main class="main">
       <div class="container">
-        <div class="events">
+        <div
+          class="events"
+          id="events"
+        >
           <section class="events__section">
             <h2 class="events__section-title">Актуальні події</h2>
 
@@ -293,7 +306,10 @@
             </article>
           </section>
 
-          <section class="gallery">
+          <section
+            class="gallery"
+            id="gallery"
+          >
             <h2 class="gallery__title">Галерея</h2>
             <div class="gallery__images">
               <img
@@ -327,7 +343,10 @@
           </section>
         </div>
 
-        <section class="subscribe">
+        <section
+          class="subscribe"
+          id="subscribe"
+        >
           <div class="container">
             <div class="subscribe__content">
               <h2 class="subscribe__title">Підписка</h2>
@@ -338,19 +357,21 @@
               <form
                 action="#"
                 class="subscribe__form-wrapper"
+                onsubmit="this.reset(); return false;"
               >
                 <div class="subscribe__form">
                   <input
                     type="email"
                     class="subscribe__form-input"
                     placeholder="Email"
+                    required
                   />
-                  <div class="subscribe__form-button">
+                  <button class="subscribe__form-button">
                     <img
                       src="../src/images/icons/input-arrow_right-black.png"
                       alt="arrow right"
                     />
-                  </div>
+                  </button>
                 </div>
               </form>
             </div>
@@ -359,7 +380,10 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer
+      class="footer"
+      id="contacts"
+    >
       <div class="container">
         <div class="footer__content">
           <div class="footer__top">
@@ -367,12 +391,21 @@
               <img
                 src="../src/images/new-logo.png"
                 alt="Logo"
+                class="footer__top-logo"
               />
             </a>
 
             <div class="footer__social-media">
-              <div class="icon icon-facebook"></div>
-              <div class="icon icon-instagram"></div>
+              <a
+                href="https://www.facebook.com/namu.museum/"
+                target="_blank"
+                class="icon icon-facebook"
+              ></a>
+              <a
+                href="https://www.instagram.com/namu.museum/"
+                target="_blank"
+                class="icon icon-instagram"
+              ></a>
             </div>
           </div>
 
@@ -448,7 +481,7 @@
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
                 <a
-                  href="#"
+                  href="#gallery"
                   class="footer__nav-link"
                 >
                   Галерея
@@ -456,7 +489,7 @@
               </li>
               <li class="footer__nav-item">
                 <a
-                  href="#"
+                  href="#events"
                   class="footer__nav-link"
                 >
                   Виставки та
@@ -469,7 +502,7 @@
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
                 <a
-                  href="#"
+                  href="#subscribe"
                   class="footer__nav-link"
                 >
                   Про нас
@@ -477,7 +510,7 @@
               </li>
               <li class="footer__nav-item">
                 <a
-                  href="#"
+                  href="#contacts"
                   class="footer__nav-link"
                 >
                   Контакти
