@@ -1,12 +1,12 @@
 .main {
-  padding-block: 70px;
+  padding-top: 70px;
   width: 100%;
 
   @include on-tablet {
-    padding-block: 88px;
+    padding-top: 88px;
   }
 
   @include on-desktop {
-    padding-block: 200px;
+    padding-top: 200px;
   }
 }
