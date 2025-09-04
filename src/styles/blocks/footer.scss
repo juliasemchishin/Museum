@@ -86,6 +86,10 @@
       &-link {
         text-decoration: none;
         color: $main-font-color;
+
+        &:hover {
+          color: $button-color;
+        }
       }
 
       @include on-tablet {

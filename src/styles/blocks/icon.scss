@@ -10,9 +10,17 @@
 
   &-facebook {
     background-image: url('../images/icons/facebook.png');
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &-instagram {
     background-image: url('../images/icons/instagram.png');
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
